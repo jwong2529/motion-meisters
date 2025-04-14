@@ -8,6 +8,9 @@ TagManager:
   - Floor
   - Paddle
   - Ball
+  - PlayerSide
+  - CPUSide
+  - Racket
   layers:
   - Default
   - TransparentFX

@@ -65,10 +65,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/Scripts/SceneManager.cs" />
-    <Compile Include="Assets/Scripts/PaddleController.cs" />
-    <Compile Include="Assets/Scripts/BallServe.cs" />
+    <Compile Include="Assets/Scripts/FollowZPosition.cs" />
     <Compile Include="Assets/TutorialInfo/Scripts/Readme.cs" />
-    <Compile Include="Assets/Scripts/BallController.cs" />
+    <Compile Include="Assets/Scripts/Player/PlayerBallHitter.cs" />
+    <Compile Include="Assets/Scripts/ConstrainPlayerMovement.cs" />
+    <Compile Include="Assets/Scripts/Ball/BallManager.cs" />
+    <Compile Include="Assets/Scripts/Ball/BallCollision.cs" />
+    <Compile Include="Assets/Scripts/Ball/BallAimer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
