@@ -4,7 +4,6 @@ public class BallManager : MonoBehaviour
 {
     public GameObject ballPrefab;
     public Transform spawnPoint;
-
     private GameObject currentBall;
 
     void Start()
