@@ -69,6 +69,7 @@
     <Compile Include="Assets/TutorialInfo/Scripts/Readme.cs" />
     <Compile Include="Assets/Scripts/ConstrainPlayerMovement.cs" />
     <Compile Include="Assets/Scripts/Ball/BallManager.cs" />
+    <Compile Include="Assets/Scripts/Ball/BallCollision.cs" />
     <Compile Include="Assets/Scripts/Ball/BallAimer.cs" />
   </ItemGroup>
   <ItemGroup>

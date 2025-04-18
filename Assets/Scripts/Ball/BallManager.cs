@@ -22,4 +22,15 @@ public class BallManager : MonoBehaviour
     {
         return currentBall;
     }
+
+    public void ResetBall()
+    {
+        if (currentBall != null)
+        {
+            Destroy(currentBall); // destroy old ball
+        }
+        SpawnNewBall(); // spawn new one at the start point
+    }
+
+    
 }

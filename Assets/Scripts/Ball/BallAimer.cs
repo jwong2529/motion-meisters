@@ -17,6 +17,7 @@ public class BallAimer : MonoBehaviour
                 rb.useGravity = true;
             }
         }
+
     }
 
     Vector3 CalculateVelocity(Vector3 start, Vector3 end, float time)
