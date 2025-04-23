@@ -2140,9 +2140,6 @@ PrefabInstance:
       addedObject: {fileID: 996193690}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4fc570e8f3cd94899b24ce3f52d91a1f, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 996193691}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4fc570e8f3cd94899b24ce3f52d91a1f, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 996193692}
   m_SourcePrefab: {fileID: 100100000, guid: 4fc570e8f3cd94899b24ce3f52d91a1f, type: 3}
 --- !u!4 &996193689 stripped
@@ -2171,23 +2168,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.4859315, y: 0.429715, z: 0.13729742}
   m_Center: {x: 0.007148465, y: 0.11397704, z: 0.003546867}
---- !u!114 &996193691
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 627756086}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd07707e510f94c4fb8a260c0c073dd5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rightHand: {fileID: 1670919491}
-  ballAimer: {fileID: 1784636818}
-  ballManager: {fileID: 2105261631}
-  swingThreshold: 0.4
-  lastRightHandPos: {x: 0, y: 0, z: 0}
 --- !u!114 &996193692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2472,7 +2452,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3c1c3d9541714b1bac6c0b05dc5d303, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zoneOwner: 1
+  zoneOwner: 0
 --- !u!1 &1087428949
 GameObject:
   m_ObjectHideFlags: 0
@@ -3655,7 +3635,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3c1c3d9541714b1bac6c0b05dc5d303, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zoneOwner: 0
+  zoneOwner: 1
 --- !u!1 &1510731114
 GameObject:
   m_ObjectHideFlags: 0
