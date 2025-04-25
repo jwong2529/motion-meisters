@@ -73,6 +73,7 @@
     <Compile Include="Assets/Scripts/Ball/BallManager.cs" />
     <Compile Include="Assets/Scripts/Ball/BallCollision.cs" />
     <Compile Include="Assets/Scripts/Ball/BallAimer.cs" />
+    <Compile Include="Assets/Scripts/IntroMessage.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />

@@ -19,6 +19,27 @@
 //     }
 // }
 
+// using UnityEngine;
+
+// public class BallCollision : MonoBehaviour
+// {
+//     private void OnCollisionEnter(Collision collision)
+//     {
+//         if (collision.gameObject.CompareTag("Floor"))
+//         {
+//             Debug.Log("Ball hit the floor. Respawning...");
+
+//             BallManager manager = FindFirstObjectByType<BallManager>();
+//             if (manager != null)
+//             {
+//                 manager.ResetBall();
+//             }
+
+//             Destroy(gameObject); // Clean up the current ball
+//         }
+//     }
+// }
+
 using UnityEngine;
 
 public class BallCollision : MonoBehaviour
@@ -27,15 +48,12 @@ public class BallCollision : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Floor"))
         {
-            Debug.Log("Ball hit the floor. Respawning...");
+            Debug.Log("Ball hit the floor. Destroying ball (no score)");
 
-            BallManager manager = FindFirstObjectByType<BallManager>();
-            if (manager != null)
-            {
-                manager.ResetBall();
-            }
+            Destroy(gameObject);
 
-            Destroy(gameObject); // Clean up the current ball
+            // Optional fallback if needed
+            // FindFirstObjectByType<BallManager>()?.ResetBallToSide(onPlayer1Side: true);
         }
     }
 }
