@@ -5,6 +5,12 @@ public class BallAimer : MonoBehaviour
     public Transform aimTarget;
     public float flightTime = 0.6f;
 
+    private AudioSource audioSource;
+
+    void Start() {
+        audioSource=GetComponent<AudioSource>();
+    }
+
     void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Ball"))
@@ -16,6 +22,9 @@ public class BallAimer : MonoBehaviour
                 rb.linearVelocity = velocity;
                 rb.useGravity = true;
             }
+            if (audioSource != null) {
+                audioSource.Play();
+            } 
         }
 
     }
